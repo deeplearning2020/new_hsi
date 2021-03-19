@@ -560,7 +560,7 @@ class S3KAIResNet(nn.Module):
 
 model = S3KAIResNet(BAND, CLASSES_NUM, 2).cuda()
 
-summary(model, input_data=(1, img_rows, img_cols, BAND), verbose=1)
+summary(model,(1, img_rows, img_cols, BAND), verbose=1)
 
 
 def train(net,
